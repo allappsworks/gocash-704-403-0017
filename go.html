@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: #ECEAED;
+  font-family: "Montserrat", sans-serif;
+
+}
+input {
+  border: 1px solid #9378FF;
+  font-family: "Montserrat", sans-serif;
+  width: 86%;
+  display: block;
+  padding: 12px;
+  color: black;
+  font-size: 15px;
+}
+button {
+  background: #AC9FF3;
+  font-family: "Montserrat", sans-serif;
+  width: 88%;
+  padding: 12px;
+  color: white;
+  font-size: 15px;
+  border-radius: 11px;
+  display: block;
+  margin-top: 30px;
+}
+.con {
+  background: #fff;
+  width: 90%;
+  margin-top: 60px;
+  height: 310px;
+  border-radius: 9px;
+}
+* {
+  margin: 0 auto;
+}
+.down {
+  background: #fff;
+  height: auto;
+  border-radius: 3px;
+  color: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1px;
+}
+</style>
+<body>
+  <center>
+    <br>
+ <h1 style="color: #9378FF;">GoCash</h1>
+ <p>Register a preferrred GoCode</p>
+ <div class="con">
+   <br>
+   <form action="buy.html" method="get" onsubmit="saveEmail()">
+     <input type="text" placeholder="Enter Your Full Name" required />
+     <br>
+     <input type="email" placeholder="Enter Email" id="emailInput" required />
+<br>
+     <input type="text" placeholder="Enter Amount" value="  ₦4,000" disabled/>
+
+     <button type="submit">Submit</button>
+   </form>
+   </div>
+   <div class="down">
+     
+     <p style="padding-top: 6px; padding-bottom: 5px;">Kindly take note: Immeditely payments is been made to this app your payments will get confirmed immediately and you will be redirected to a private page where your Go-Code will be revieled to you.</p>
+   </div>
+</body>
+
+</html>
+ <script>
+        function saveEmail() {
+            const emailInput = document.getElementById('emailInput');
+            const email = emailInput.value;
+    
+            // Store the email in a session variable or pass it as a query parameter
+            // to the next page, depending on your preferred method.
+    
+            // For example, you can use sessionStorage:
+            sessionStorage.setItem('email', email);
+        }
+    </script>
+    

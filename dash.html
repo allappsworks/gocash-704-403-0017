@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/3ca0a9bad6.js" crossorigin="anonymous"></script>
+  
+  <title></title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: #ECEAED;
+  font-family: "Montserrat", sans-serif;
+}
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ECEAED;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .top-bar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 8px;
+  }
+  
+  .top-bar p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .container {
+    width: 97%;
+    height: 190px;
+    background: #AC9FF3;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-top: 102px;
+  }
+  .oth {
+    width: 90%;
+    height: 80px;
+    border-radius: 14px;
+    display: flex; 
+    background: #AC9FF3;
+    margin: 0 auto;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+  }
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ECEAED;
+  padding: 20px;
+  margin-top: 57px;
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  background-color: #AC9FF3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.con {
+  width: 98%;
+  background: #AC9FF3;
+  height: auto;
+}
+</style>
+<body>
+  <div class="top-bar">
+  <img src="man.webp" alt="man.webp">
+<p>Hi, <span id="inputValue"></span></p>
+</div>
+<div class="container">
+  <i class="fa-solid fa-wallet" style="float: left; font-size: 26px; padding-left: 18px; padding-top: 17px;"><b style="font-size: 21px; font-family: "Montserrat", sans-serif;"> Balance</b></i>
+<br><br><br>
+<h2 style="padding-left: 20px; font-size: 19px; color: white;">₦ <span style="font-size: 27px;">150000.00</span></h2>
+<br>
+<b style="padding-left: 19px; font-size: 18px;">**** **** **** **** 6746</b>
+</div>
+<div class="oth">
+    <div class="option">
+      <a href="stat.html" style="color: #000; text-decoration: none;">
+<i class="fa-solid fa-globe" style="padding-left: 39px; padding-bottom: 8px; font-size: 24px;"></i>
+<br>
+      <span>Check Status</span>
+      </a>
+    </div>
+    <div class="option">
+      <a href="withdraw.html" style="color: #000; text-decoration: none;">
+      <i class="fa-solid fa-paper-plane" style="padding-left: 19px; padding-bottom: 8px; font-size: 24px;"></i>
+      <br>
+      <span>Transfer</span>
+      </a>
+    </div>
+    </div>
+</div>
+<div class="icon-container">
+  <div class="icon-row">
+     <div class="icon-item">
+       <i class="fa-solid fa-mobile-screen" style="font-size: 28px;"></i>
+       <span style="padding-top: 8px; font-weight: bold;">Airtime</span>
+     </div>
+    <div class="icon-item">
+      <a href="go.html">
+      <i class="fa-brands fa-golang" style="font-size: 36px;"></i>
+      <span style="padding-top: 6px; margin: 0; font-weight: bold;">GoCode</span>
+      </a>
+    </div>
+    <div class="icon-item">
+      <a href="#">
+<i class="fa-solid fa-headset" style="font-size: 33px; padding-bottom: 5px;"></i>
+      <span style="font-weight: bold; padding-top: 15px;">Chat</span>
+      </a>
+    </div>
+  </div>
+  <br>
+  <div class="icon-row">
+    <div class="icon-item">
+    <a href="https://t.me/opaybeta1" style="padding-left: 19px;">
+<i class="fa-brands fa-telegram" style="font-size: 33px; padding-bottom: 10px; padding-left: 25px; font-size: 24px; padding-top: 12px;"></i>
+      <span style="padding-top: px; font-weight: bold;">Telegram</span>
+      </a>
+    </div>
+    <div class="icon-item">
+      <a href="trans.html">
+<i class="fa-solid fa-tent-arrow-left-right" style="font-size: 33px; padding-left: 31px; padding-bottom: 12px; font-size: 24px; padding-top: 10px;"></i>
+      <span style="padding-top: 13px; font-weight: bold; font-size: 15px;">Transaction</span>
+   </a>
+    </div>
+    </div>
+  </div>
+</div
+</div>
+<div class="bottom">
+</body>
+
+</html>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const inputField = urlParams.get('inputField');
+  document.getElementById('inputValue').innerText = inputField;
+</script>

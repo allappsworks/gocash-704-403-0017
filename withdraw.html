@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bank Transfer</title>
+  <script src="https://kit.fontawesome.com/3ca0a9bad6.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+    
+    .con {
+      width: 100%;
+      background: #AC9FF3;
+      height: 50px;
+    }
+    * {
+      margin: 0 auto;
+    }
+    body {
+      background: #ECEAED;
+      font-family: "Montserrat", sans-serif;
+    }
+    input {
+      width: 87%;
+      padding: 10px;
+      outline: none;
+      display: block;
+      margin: 0 auto;
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      height: 24px;
+      border: 1px solid #9378FF;
+    }  
+    cum {
+      width: 91%;
+      height: 517px;
+      background: #ffffff;
+      margin: 0 auto;
+      border-radius: 10px;
+      position: relative;
+    }
+    h2 {
+      padding-left: 14px;
+    }
+    button {
+      width: 91%;
+      outline: none;
+      display: block;
+      margin: 0 auto;     
+      height: 39px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+      background: #AC9FF3;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      margin-top: 24px;
+    }
+    .select {
+      font-family: "Montserrat", sans-serif;
+    }
+    img {
+      width: 92%;
+      border-radius: 8px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <h3 style="padding-left: 11px; padding-top: 9px;">Transfer to bank</h3>
+  </div>
+  <center>
+    <img src="with.jpeg" alt="with.jpeg">
+  </center>
+  <br>
+  <br>
+  <h2>Bank Details</h2>
+  <br>
+  <form id="password-form">
+    <input type="text" id="name" placeholder="Account Name" required> <br>
+    <input type="number" id="accountNumber" placeholder="Account Number" required> <br>
+    
+    <select style="width: 93%;
+          height: 47px;
+          color: #000;
+          margin: 0 auto;
+          border-radius: 6px;
+          display: block;
+          margin-bottom: 13px;
+          background: #fff; border: 1px solid #9378FF;" required>
+       <option value="" disabled selected>Select Banks</option>
+                    
+                    <option value="9Payments Service Bank">9Payments Service Bank</option>
+                    <option value="Access Bank PLC">Access Bank PLC</option>
+                    <option value="ACCESSMONEY">ACCESSMONEY</option>
+                    <option value="Carbon">Carbon</option>
+                    <option value="Chase Microfinance Bank">Chase Microfinance Bank</option>
+                    <option value="CitiBank Nigeria">CitiBank Nigeria</option>
+                    <option value="E-Finance">E-Finance</option>
+                    <option value="Eyowo Microfinance Bank">Eyowo Microfinance Bank</option>
+                    <option value="EcoBank Nigeria">EcoBank Nigeria</option>
+                    <option value="eNaira(e-Naira)">eNaira(e-Naira)</option>
+                    <option value="eTransact">eTransact</option>
+                    <option value="FCMB MFB">FCMB MFB</option>
+                    <option value="First Bank Nigeria">First Bank Nigeria</option>
+                    <option value="FairMoney">FairMoney</option>
+                    <option value="Fidelity Bank PLC">Fidelity Bank PLC</option>
+                    <option value="GTBank PLC">GTBank PLC</option>
+                    <option value="Globus Bank">Globus Bank</option>
+                    <option value="GoMoney">GoMoney</option>
+                    <option value="Jaiz Bank">Jaiz Bank</option>
+                    <option value="Keystone Bank">Keystone Bank</option>
+                    <option value="Kuda MicroFianance Bank">Kuda MicroFianance Bank</option>
+                    <option value="Lotus Bank">Lotus Bank</option>
+                    <option value="MTN MoMO PSB">MTN MoMO PSB</option>
+                    <option value="MoniePoint MicroFianance Bank">MoniePoint MicroFianance Bank</option>
+                    <option value="OPTIMUS BANK">OPTIMUS BANK</option>
+                    <option value="OPAY">OPAY</option>           
+                    <option value="PARRALEX">PARRALEX</option>
+                    <option value="Paga">Paga</option>
+                    <option value="Paystack-Titan">Paystack-Titan</option>
+                    <option value="PalmPay">PalmPay</option>
+                    <option value="Polaris Bank">Polaris Bank</option>
+                    <option value="Providus Bank">Providus Bank</option>            
+                    <option value="SmartCash PSB">SmartCash PSB</option>
+                                   <option value="Sparkle">Sparkle</option>            <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option>            
+            <option value="Sterling Bank">Sterling Bank</option>            <option value="TITAN TRUST BANK">TITAN TRUST BANK</option>
+            <option value="Union Bank Of Nigeria">Union Bank Of Nigeria</option>            <option value="United Bank for Africa">United Bank for Africa</option>
+            <option value="VFD MicroFianance Bank">VFD MicroFianance Bank</option>            <option value="Wema Bank">Wema Bank</option>
+<option value="ZENITH BANK">ZENITH BANK</option>
+    </select>
+    
+    <input type="tel" id="amount" placeholder="Amount" required> <br>
+    
+    <input type="password" id="password" placeholder="Enter Go-Code" style="margin-bottom: 9px;" required/>
+    <span style="color: green; font-size: 14px; padding-left: 17px;">Available Balance: ₦150000.00</span>
+    <button type="submit">Submit</button>
+    
+    <center>
+      <div id="error-message" style="color: red; padding-top: 7px;"></div>
+    </center>
+  </form>
+  
+  <br>
+  <a href="go.html" style="float: right; color: black; text-decoration: none; padding-right: 14px; font-weight: bold;">
+    <i class="fa-solid fa-cart-shopping" style="font-size: 28px; padding-left: 29px;"></i><br>
+    Buy GoCode
+  </a>
+  <br><br><br><br><br><br><br><br>
+
+  <script>
+    const form = document.getElementById('password-form');
+    const passwordInput = document.getElementById('password');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const password = passwordInput.value;
+      if (password === 'usergo178pay$') {
+        location.href = 'success.html';
+      } else {
+        errorMessage.innerHTML = 'Incorrect Go-Code. Try again!';
+        errorMessage.style.display = 'block';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
